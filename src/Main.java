@@ -157,7 +157,7 @@ public class Main {
                 }
             }
         }
-
+        System.out.println("\nFIN DE LA HISTORIA");
         // 5. Cierra el objeto Scanner para liberar recursos
         scanner.close();
     }
