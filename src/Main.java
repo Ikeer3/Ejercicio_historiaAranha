@@ -15,7 +15,7 @@ public class Main {
         // 4. Empieza la historia
         System.out.println("\n" + nombre + ", la araña residente del aula de 1º de DAM, " +
                 "decide que ya ha pasado demasiado tiempo observando desde el techo. " +
-                "Hoy es el día en que abandonará su rincón polvoriento para enfrentarse " +
+                "\nHoy es el día en que abandonará su rincón polvoriento para enfrentarse " +
                 "al mundo… o al zapato de alguien.");
 
         // DECISIÓN 1: Hasta que altura baja la araña?
@@ -43,7 +43,7 @@ public class Main {
             // DECISIÓN 3A1 (3 → Enter)
             if (decisionTeclado.equals("enter")) {
                 System.out.println("\nEl ordenador abre 27 pestañas a la vez. El alumno grita: " +
-                        "“¡¡MI PC ESTÁ POSEÍDO!!” " + nombre + " aprovecha el caos para correr " +
+                        "“¡¡MI PC ESTÁ POSEÍDO!!” " + "\n" + nombre + " aprovecha el caos para correr " +
                         "hacia el aula de ASIR 1 o hacia el aula de ASIR 1 haciendo zig-zag?");
                 System.out.println("1) Aula de ASIR 1");
                 System.out.println("2) Aula de ASIR 1 haciendo zig-zag");
@@ -67,7 +67,7 @@ public class Main {
             // DECISIÓN 3A2 (3 → Shift)
             else if (decisionTeclado.equals("shift")) {
                 System.out.println("El bloqueo de mayúsculas se activa. El alumno escribe " +
-                        "todo en plan: “PROFEEEE EL WIFI NO VA” Cunde el pánico. " + nombre +
+                        "todo en plan: “PROFEEEE EL WIFI NO VA” Cunde el pánico. " + "\n" + nombre +
                         " intenta escapar hacia el aula de ASIR 1 o hacia el aula de ASIR 1 " +
                         "haciendo piruetas?");
                 System.out.println("1) Aula de ASIR 1");
@@ -133,7 +133,7 @@ public class Main {
             // DECISIÓN 3B2 (5 → Papelera)
             else if (decisionSuelo.equals("papelera")) {
                 System.out.println(nombre + " resbala en un trozo de bocadillo dentro y sale " +
-                        "rodando al pasillo. " + nombre + " decide ir hacia el aula de ASIR 1 " +
+                        "rodando al pasillo. " + "\n" + nombre + " decide ir hacia el aula de ASIR 1 " +
                         "o hacia el aula de ASIR 1 dramatizando su sufrimiento?");
                 System.out.println("1) Aula de ASIR 1");
                 System.out.println("2) Aula de ASIR 1 dramatizando su sufrimiento");
@@ -151,7 +151,7 @@ public class Main {
                 // Final 8 — Ayudante Oficial del Profesor
                 if (decisionPapelera == 2) {
                     System.out.println("El profesor, harto de que nadie responda en clase, " +
-                            "suspira: “Por lo menos la araña presta atención. A partir de " +
+                            "suspira: “Por lo menos la araña presta atención. \nA partir de " +
                             "hoy... será mi asistente técnico. " + nombre + " observa desde " +
                             "el teclado con aires de grandeza.");
                 }
