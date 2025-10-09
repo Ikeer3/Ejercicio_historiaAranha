@@ -20,13 +20,16 @@ public class Main {
 
         // DECISIÓN 1: Hasta que altura baja la araña?
         System.out.println("\nQuieres que " + nombre + " baje 3 metros o 5 metros?: ");
-        System.out.println("1) 3");
-        System.out.println("2) 5");
         System.out.println("Escribe 3 o 5: ");
+        int decisionAltura = scanner.nextInt();
 
+        while (decisionAltura != 3 && decisionAltura != 5) {
+            System.out.println("Opción no válida: " + decisionAltura);
+            System.out.println("Escribe 3 o 5: ");
+            decisionAltura = scanner.nextInt();
+        }
         // A) 3 metros. ➡️ Sigue a DECISIÓN 2A
         // B) 5 metros. ➡️ Sigue a DECISIÓN 2B
-        byte decisionAltura = scanner.nextByte();
 
 
         // DECISIÓN 2A (Si eligió 3 metros): ¿Dónde aterriza dentro del aula?
@@ -36,9 +39,16 @@ public class Main {
             System.out.println("1) enter");
             System.out.println("2) shift");
             System.out.println("Escribe enter o shift: ");
+            String decisionTeclado = scanner.next();
+
+            while (!decisionTeclado.equals("enter") && !decisionTeclado.equals("shift")) {
+                System.out.println("Opción no válida: " + decisionTeclado);
+                System.out.println("Escribe enter o shift: ");
+                decisionTeclado = scanner.next();
+            }
             // A) Enter. ➡️ Sigue a DECISIÓN 3A1
             // B) Shift. ➡️ Sigue a DECISIÓN 3A2
-            String decisionTeclado = scanner.next();
+
 
             // DECISIÓN 3A1 (3 → Enter)
             if (decisionTeclado.equals("enter")) {
@@ -48,9 +58,16 @@ public class Main {
                 System.out.println("1) Aula de ASIR 1");
                 System.out.println("2) Aula de ASIR 1 haciendo zig-zag");
                 System.out.println("Elige 1 o 2: ");
+                int decisionEnter = scanner.nextInt();
+
+                while (decisionEnter != 1 && decisionEnter != 2) {
+                    System.out.println("Opción no válida: " + decisionEnter);
+                    System.out.println("Escribe 1 o 2: ");
+                    decisionEnter = scanner.nextInt();
+                }
                 // A) El aula de ASIR 1. ➡️ FINAL 1
                 // B) El aula de ASIR 1 haciendo zig-zag. ➡️ FINAL 2
-                byte decisionEnter = scanner.nextByte();
+
 
                 // Final 1 — Aplastamiento Directo (Clásico)
                 if (decisionEnter == 1) {
@@ -73,9 +90,16 @@ public class Main {
                 System.out.println("1) Aula de ASIR 1");
                 System.out.println("2) Aula de ASIR 1 haciendo piruetas");
                 System.out.println("Elige 1 o 2: ");
+                int decisionShift = scanner.nextInt();
+
+                while (decisionShift != 1 && decisionShift != 2) {
+                    System.out.println("Opción no válida: " + decisionShift);
+                    System.out.println("Escribe 1 o 2: ");
+                    decisionShift = scanner.nextInt();
+                }
                 // A) El aula de ASIR 1. ➡️ FINAL 3
                 // B) El aula de ASIR 1 haciendo piruetas. ➡️ FINAL 4
-                byte decisionShift = scanner.nextByte();
+
 
                 // Final 3 — La araña se vuelve Influencer Tecnológica
                 if (decisionShift == 1) {
@@ -98,12 +122,19 @@ public class Main {
         else if (decisionAltura == 5) {
             System.out.println("\n" + nombre + " llega al suelo, " + nombre + " corre a " +
                     "esconderse debajo de una mochila o hacia una papelera?: ");
-            System.out.println("1) Mochila");
-            System.out.println("2) Papelera");
+            System.out.println("1) mochila");
+            System.out.println("2) papelera");
             System.out.println("Escribe mochila o papelera: ");
+            String decisionSuelo = scanner.next();
+
+            while (!decisionSuelo.equals("mochila") && !decisionSuelo.equals("papelera")) {
+                System.out.println("Opción no válida: " + decisionSuelo);
+                System.out.println("Escribe mochila o papelera: ");
+                decisionSuelo = scanner.next();
+            }
             // A) Bajo una mochila. ➡️ Sigue a DECISIÓN 3B1
             // B) Hacia una papelera. ➡️ Sigue a DECISIÓN 3B2
-            String decisionSuelo = scanner.next();
+
 
             // DECISIÓN 3B1 (5 → Mochila)
             if (decisionSuelo.equals("mochila")) {
@@ -113,9 +144,16 @@ public class Main {
                 System.out.println("1) Aula de ASIR 1");
                 System.out.println("2) Aula de ASIR 1 gritando");
                 System.out.println("Elige 1 o 2: ");
+                int decisionMochila = scanner.nextInt();
+
+                while (decisionMochila != 1 && decisionMochila != 2) {
+                    System.out.println("Opción no válida: " + decisionMochila);
+                    System.out.println("Elige 1  o 2: ");
+                    decisionMochila = scanner.nextInt();
+                }
                 // A) Directa al aula de ASIR 1. ➡️ FINAL 5
                 // B) Al aula de ASIR 1 gritando. ➡️ FINAL 6
-                byte decisionMochila = scanner.nextByte();
+
 
                 // Final 5 — Aplastamiento Existencial
                 if (decisionMochila == 1) {
@@ -138,9 +176,16 @@ public class Main {
                 System.out.println("1) Aula de ASIR 1");
                 System.out.println("2) Aula de ASIR 1 dramatizando su sufrimiento");
                 System.out.println("Elige 1 o 2: ");
+                int decisionPapelera = scanner.nextInt();
+
+                while (decisionPapelera != 1 && decisionPapelera != 2) {
+                    System.out.println("Opción no válida: " + decisionPapelera);
+                    System.out.println("Escribe 1 o 2: ");
+                    decisionPapelera = scanner.nextInt();
+                }
                 // A) Al aula de ASIR 1. ➡️ FINAL 7
                 // B) Al aula de ASIR 1 dramatizando su sufrimiento. ➡️ FINAL 8
-                byte decisionPapelera = scanner.nextByte();
+
 
                 // Final 7 — La araña es ascendida a Diosa del Aula
                 if (decisionPapelera == 1) {
